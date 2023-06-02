@@ -1,0 +1,70 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
+
+
+@layer utilities{
+  .background_body{
+    background: white;
+  }
+
+  .shadow_light{
+    box-shadow: 2px 2px 10px black;
+  }
+
+  .shadow_dark{
+    box-shadow: 1px 1px 8px black;
+  }
+
+  .max{
+    max-width: 700px;
+    min-width: 300px;
+  }
+
+  .btns{
+    padding: 10px 20px; 
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+
+  .btn_dark{
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+}
+
+
+
+
+
+
+@layer components{
+  .card_dektop{
+    @apply w-6/12 p-8 bg-white rounded-[5px]  flex flex-row flex-nowrap justify-between items-center gap-[20px]
+  }
+
+  .card_mobile{
+    @apply w-4/12  p-8 bg-white rounded-[5px] flex flex-col flex-nowrap justify-between items-center gap-[20px]
+  }
+
+  
+}
